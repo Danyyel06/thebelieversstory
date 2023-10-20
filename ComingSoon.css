@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.BM, .SM{
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.3;
+  padding: 7% 12%;
+  padding-top: 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subtext{
+  color:#fff;
+  margin-top:-8%;
+  font-family: 'Poppins', sans-serif;
+  padding:0% 10%;
+  font-size: 0.9rem;
+}
+.Phone-Video-Tablet{
+  display: none;
+}
+
+.Phone-Main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .Phone-Video-Mobile{
+    display: grid;
+    grid-auto-columns:1fr;
+  }
+  .Phone-Video-Mobile{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+  }
+
+  .Phone-Video-Mobile img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .Phone-Video-Mobile::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .Main-Content{
+    z-index: 10000;
+    margin-bottom: 2%;
+    color: rgba(255, 255, 255, 1);
+  }
+   .logo{
+    position: absolute;
+    top: 0;
+    text-decoration: none;
+    color:#efefef;
+    display: grid;
+    padding: 4% 3%;
+    font-family: 'Righteous', cursive;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 10;
+  }
+  .button{
+    z-index: 10;
+    text-decoration: none;
+    color:#fff;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 3% 7%;
+    margin: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border: 1px solid #adadad;
+    transition: 1s;
+    margin-top: -10%;
+
+  }
+  .button:hover{
+    background-color: #2d40c6;
+    color: #fff;
+    border:1px solid #2d40c6;
+
+
+  }
+  .copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 auto;
+    font-size: 0.6rem;
+    margin-bottom: 0%;
+    margin-top: 2%;
+
+  }
+.contacts{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 auto;
+  padding-bottom: 1%;
+}
+
+@media(min-width:768px){
+  .Phone-Video-Tablet{
+    display: grid;
+    grid-auto-columns:1fr;
+  }
+
+  .Phone-Video-Tablet{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+  }
+
+  .Phone-Video-Tablet img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+
+  .Phone-Video-Tablet::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .logo{
+   position: absolute;
+   top: 0;
+   text-decoration: none;
+   color:#efefef;
+   display: grid;
+   padding: 2% 3%;
+   font-family: 'Righteous', cursive;
+   font-size: 1.5rem;
+   letter-spacing: 3px;
+   text-align: center;
+   z-index: 10;
+ }
+ .Main-Content{
+   z-index: 10000;
+   margin-bottom: 2%;
+   color: rgba(255, 255, 255, 1);
+ }
+ .BM, .SM{
+   font-weight: 600;
+   font-size: 4rem;
+   line-height: 1.3;
+   padding: 7% 12%;
+   padding-top: 10%;
+   font-family: 'Poppins', sans-serif;
+}
+
+.subtext{
+  color:#fff;
+  margin-top:-8%;
+  font-family: 'Poppins', sans-serif;
+  padding:0% 10%;
+  font-size: 1rem;
+}
+
+
+ .button{
+   z-index: 10;
+   text-decoration: none;
+   color:#fff;
+   font-size: 1rem;
+   border-radius: 15px;
+   padding: 1% 4%;
+   margin: 5%;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: bold;
+   border: 1px solid #adadad;
+   transition: 1s;
+   margin-top: -10%;
+
+ }
+ .button:hover{
+   background-color: #2d40c6;
+   color: #fff;
+   border:1px solid #2d40c6;
+
+
+ }
+
+ .copyright{
+   position: absolute;
+   bottom: 0px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 0 auto;
+   font-size: 0.6rem;
+   margin-bottom: 0%;
+   margin-top: 2%;
+
+ }
+
+  .Phone-Video-Mobile{
+    display: none;
+  }
+
+}
