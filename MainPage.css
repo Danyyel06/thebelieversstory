@@ -1,0 +1,1998 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  background-color:#f0f1fd;
+  font-weight: 300;
+  z-index:10000000;
+}
+/* LOGO */
+.logo-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color:#000;
+  display: grid;
+  padding: 2% 5%;
+}
+/* MAIN CONTENT */
+h3{
+  font-size: 3rem;
+}
+.BM, .SM{
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1.3;
+  padding: 0% 5%;
+  /* margin-top: -5%; */
+  /* font-family: 'IM Fell French Canon', serif; */
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  padding-bottom: 0%;
+}
+.subtext{
+  padding: 0% 5%;
+  padding-bottom: 5%;
+  color: #fff;
+  font-size: 15px;
+  /* font-family: 'IM Fell French Canon', serif; */
+  font-family: 'Poppins', sans-serif;
+  font-weight:lighter;
+}
+@media(min-width:500px) and (max-width:600px){
+  .BM, .SM{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.3;
+    padding: 0% 5%;
+    /* margin-top: -5%; */
+    /* font-family: 'IM Fell French Canon', serif; */
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    /* padding-bottom: 20%; */
+  }
+}
+@media(max-width:320px){
+  .BM, .SM{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.3;
+    padding: 0% 5%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding-bottom: 10%;
+  }
+  .subtext{
+    padding: 0% 5%;
+    color: #fff;
+    font-size: 15px;
+    /* font-family: 'IM Fell French Canon', serif; */
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+    margin-top: -3%;
+  }
+
+}
+.Main-Button{
+  text-decoration: none;
+  color: white;
+  border:1px solid #fff;
+  padding: 3% 5%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  transition: 10s;
+}
+
+.Button{
+  position: relative;
+  bottom: 0;
+  left:0;
+  padding-left: 5%;
+  padding-bottom:20%;
+  display: flex;
+}
+.Phone-Video-Tablet{
+  display: none;
+}
+
+
+.Phone-Video-Others{
+  display: none;
+}
+.Phone-Main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+    text-align: left;
+  }
+  .Phone-Video-Mobile{
+    display: grid;
+    grid-auto-rows:1fr;
+  }
+
+  .Phone-Video-Mobile img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  .Phone-Video-Mobile::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: #101820;
+    z-index: -1;
+  }
+  .Main-Content{
+    z-index: 10000;
+    margin-bottom: 2%;
+    color: rgba(255, 255, 255, 1);
+  }
+/* ABOUT US SECTION */
+  #ABOUT_US{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 2% 5%;
+    background-color:#fff;
+    color: black;
+  }
+  #ABOUT_US img{
+    padding-top: 10%;
+    /* padding-bottom: 10%; */
+    /* width: 100%;
+    height: 100%; */
+  }
+  #ABOUT_US p{
+    font-size:16px;
+    color: #434343;
+    font-family: 'Heebo', sans-serif;
+    /* font-family: 'IM Fell French Canon', serif; */
+    text-align: left;
+    font-weight: 600;
+    padding-bottom:3%;
+    line-height: 1.5;
+  }
+  #ABOUT_US h2{
+    font-size: 40px;
+    color: black;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'IM Fell French Canon', serif; */
+    font-weight: 600;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+.about_button{
+  z-index: 1;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 4% 10%;
+  margin: 5%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  background-color:#37c5ff;
+  width: 300px;
+}
+
+.Oga{
+  text-align: center;
+  padding-left: 5% 1%;
+}
+
+/* CAROUSEL CHAPTERS */
+  .Carousel-Header{
+    font-size: 45px;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    text-align: center;
+    text-align: left;
+    padding: 15% 5%;
+    color: #000;
+  }
+  .Container{
+    width:95vw;
+    height: 450px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+    text-align: left;
+  }
+  @media(min-width:300px){
+  .Container{
+    width:95vw;
+    height: 500px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+  }
+  @media(min-width:400px){
+  .Container{
+    width:95vw;
+    height: 550px;
+    padding: 5% auto;
+    cursor: pointer;
+    perspective: 1000px;
+    }
+  }
+  @media(min-width:500px) and (max-width:600px){
+  .Container{
+    width:95vw;
+    height: 600px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+    }
+  }
+  .Believer-Chapter{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position:relative;
+    transition: transform 1s;
+    transform-style:preserve-3d;
+    text-align: left;
+  }
+  .Card-Flip{
+  transform: rotateY(180deg);
+  }
+  .Front, .Back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .Front{
+    background:#CDE990;
+    text-align: left;
+  }
+
+  .Back{
+    background:#CDE990;
+    transform: rotateY(180deg);
+    text-align: left;
+    color: black;
+  }
+
+  .Front img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7%;
+  }
+  .Back img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+  }
+  .shola img{
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+  }
+
+
+@media (min-width:400px){
+  .Front img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7%;
+    height:130px;
+    width: 130px;
+  }
+  .Back img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+  }
+  .shola img{
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+  }
+
+}
+  .Chapter-Text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    padding:0% 5%;
+    text-align: left;
+    /* padding-bottom: 5%; */
+  }
+  @media (min-width:400px){
+    .Chapter-Text{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: black;
+      z-index: 1000;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      padding:0% 5%;
+      text-align: left;
+      /* padding-bottom: 5%; */
+    }
+  }
+  @media(min-width:500px) and (max-width:600px){
+    .Chapter-Text{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: black;
+      z-index: 1000;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 45px;
+      padding:0% 5%;
+      text-align: left;
+      /* padding-bottom: 5%; */
+    }
+  }
+
+  .Little-Text{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    padding:2% 3%;
+    text-align: left;
+  }
+
+  /* FUNNY INTERPRETATION */
+  .Funny-Header{
+    font-size: 50px;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    text-align: center;
+    padding: 15% 5%;
+    color: #000;
+  }
+
+@media (min-width:500px) and (max-width:600px) {
+  .Funny-Header{
+    font-size: 50px;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bolder;
+    text-align: center;
+    padding: 20% 5%;;
+    padding-top: 25%;
+    color: #000;
+  }
+}
+  .Funny-Container{
+    width:95vw;
+    height: 450px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+    text-align: left;
+  }
+  @media(min-width:300px){
+  .Funny-Container{
+    width:95vw;
+    height: 500px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+  }
+  @media(min-width:400px){
+  .Funny-Container{
+    width:95vw;
+    height: 550px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+    }
+  }
+  @media(min-width:500px) and (max-width:600px){
+  .Funny-Container{
+    width:95vw;
+    height: 600px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+    }
+  }
+  .Funny-Card{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position:relative;
+    transition: transform 1s;
+    transform-style:preserve-3d;
+    text-align: left;
+  }
+  .Funny-Card-Flip{
+  transform: rotateY(180deg);
+  }
+  .Funny-Front, .Funny-Back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .Funny-Front{
+    background:#57C5B6;
+    text-align: left;
+  }
+
+  .Funny-Back{
+    background:#FFD93D;
+    transform: rotateY(180deg);
+    text-align: left;
+    color: black;
+  }
+
+  .Funny-Front img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7%;
+  }
+
+  @media (min-width:400px){
+    .Funny-Front img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 7%;
+      height:130px;
+      width: 130px;
+    }
+  }
+
+
+  .Funny-Back img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+  }
+
+  @media (min-width:400px){
+    .Funny-Back img{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 7%;
+      float: right;
+      height:120px;
+      width: 120px;
+    }
+  }
+
+
+  .Funny-Text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    padding:0% 5%;
+    text-align: left;
+    padding-bottom: 5%;
+  }
+  @media (min-width:400px){
+    .Funny-Text{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: black;
+      z-index: 1000;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      padding:0% 5%;
+      text-align: left;
+      padding-bottom: 5%;
+    }
+  }
+  @media(min-width:500px) and (max-width:600px){
+    .Funny-Text{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: black;
+      z-index: 1000;
+      font-family: 'Poppins', sans-serif;
+      font-size: 45px;
+      font-weight: 600;
+      padding:0% 5%;
+      text-align: left;
+      padding-bottom: 5%;
+    }
+  }
+
+  .Funny-Little-Text{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding:10% 3%;
+    text-align: left;
+  }
+
+  .Funny-Chapter-Button{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding:2% 5%;
+    position: absolute;
+    float: right;
+    bottom: 0;
+    right: 0;
+    margin: 5% 5%;
+    font-weight: 900;
+  }
+
+
+/* FOOTER */
+footer{
+  background-color: black;
+  /* font-family: 'Heebo', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: grey;
+}
+.Footer-Header{
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+footer img{
+  width: 5%;
+  height: 5%;
+  z-index: 10;
+}
+.Footer-logo{
+  width: 100%;
+  height: 100%;
+  padding: 5% 5%;
+
+}
+.Call{
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-column-gap: 5%;
+}
+.Call img{
+  margin-left:10%;
+  width: 35px;
+  height: 35px;
+}
+.Email{
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-column-gap: 5%;
+
+}
+.Email img{
+  width: 35px;
+  height: 35px;
+  margin-left:10%;
+}
+.Quick-Links a, .About-Us-Footer a, .Email a{
+text-decoration: none;
+color: grey;
+/* line-height: 1px; */
+}
+.Social-Media img{
+  width: 40px;
+  height: 40px;
+  margin-left: 3%;
+}
+
+.Part-One{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 7% 0%;
+  padding-left: 5%;
+}
+.Part-Two{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8%;
+  padding: 7% 0%;
+  padding-left: 5%;
+}
+.Part-Three{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10%;
+  padding: 7% 0%;
+  padding-left: 5%;
+}
+.Part-Four{
+  display: grid;
+  grid-template-columns:1fr;
+  grid-column-gap: 10%;
+  padding: 2% 0%;
+  padding-left: 5%;
+}
+
+  /* SETTINGS TO EACH SECTIONS */
+#MAIN{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#ABOUT_US{
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-bottom: 15%;
+  /* padding-top: 55%; */
+
+}
+
+#CHAPTERS{
+  position: relative;
+  top: 0;
+  left: 0;
+   margin-top: -10%;
+   padding:10% 0%;
+   margin-bottom:-15%;
+   text-align: center;
+
+}
+#testimonials{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+#Funny-INTERPRETATION{
+  background-color: #f0f1fd;;
+  text-align: center;
+  color: #DDC6B6;
+
+}
+@media (min-width:600px) and (max-width:768px) {
+  .BM, .SM{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.3;
+    padding: 0% 5%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  .subtext{
+    padding: 0% 5%;
+    padding-bottom: 1%;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+  }
+
+  .Main-Button{
+    text-decoration: none;
+    color: white;
+    border:2px solid #fff;
+    padding: 2% 4%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    transition: 10s;
+  }
+
+  .Button{
+    position: relative;
+    bottom: 0;
+    left:0;
+    padding-left: 5%;
+    padding-bottom:10%;
+    display: flex;
+  }
+
+#ABOUT_US img{
+  width: 350px;
+  height: 400px;
+}
+#ABOUT_US p{
+  font-size: 23px;
+  line-height: 2;
+}
+
+.Oga{
+  text-align: center;
+  padding-left: 5% 1%;
+}
+
+.Funny-Back img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7%;
+  float: right;
+  height:150px;
+  width: 150px;
+}
+
+.Funny-Front img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7%;
+  float: right;
+  height:170px;
+  width: 170px;
+}
+.Back img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7%;
+  float: right;
+  height:150px;
+  width: 150px;
+}
+.Front img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7%;
+  float: right;
+  height:170px;
+  width: 170px;
+}
+.shola img{
+  position: relative;
+  top: 0;
+  right: 0;
+  padding: 7%;
+  float: right;
+  height:150px;
+  width: 150px;
+}
+
+.Carousel-Header{
+  font-size: 65px;
+  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+  font-weight:700;
+  text-align: center;
+  text-align: left;
+  padding: 15% 5%;
+  color: #000;
+}
+.Funny-Header{
+  font-size: 65px;
+  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+  font-weight:700;
+  text-align: center;
+  padding: 15% 5%;
+  color: #000;
+}
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+  .Phone-Video-Tablet{
+    display: grid;
+    grid-auto-rows:1fr;
+  }
+
+  .Phone-Video-Tablet img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Phone-Video-Tablet::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+   background: rgba(0, 0, 0, 0.5);
+  }
+  .logo{
+   position: absolute;
+   top: 0;
+   text-decoration: none;
+   color:black;
+   display: grid;
+   padding: 2% 3%;
+   font-family: 'Righteous', cursive;
+   font-size: 1.5rem;
+   letter-spacing: 3px;
+   text-align: center;
+   z-index: 10;
+   width:200px;
+   height: 200px;
+ }
+ .Main-Content{
+   z-index: 1000;
+   margin-bottom: 2%;
+   color: rgba(255, 255, 255, 1);
+ }
+
+  .Phone-Video-Mobile{
+    display: none;
+  }
+  .BM, .SM{
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 1.3;
+    padding: 0% 5%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    width:700px;
+
+  }
+  .subtext{
+    padding: 0% 5%;
+    padding-bottom: 1%;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+  }
+  .Oga{
+    text-align: center;
+    padding-left: 5% 1%;
+  }
+
+
+  .Main-Button{
+    text-decoration: none;
+    color: white;
+    border:2px solid #fff;
+    padding: 2% 4%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    transition: 10s;
+  }
+
+  .Button{
+    position: relative;
+    bottom: 0;
+    left:0;
+    padding-left: 5%;
+    padding-bottom:10%;
+    display: flex;
+  }
+  #ABOUT_US img{
+    width: 450px;
+    height: 500px;
+  }
+
+  #ABOUT_US p{
+    font-size: 25px;
+    line-height: 2;
+  }
+  #ABOUT_US h2{
+    font-size: 55px;
+    color: black;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .about_button{
+  z-index: 1;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 4% 10%;
+  margin: 5%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  background-color:#37c5ff;
+  width: 300px;
+  }
+
+  .Carousel-Header{
+    font-size: 85px;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    text-align: center;
+    text-align: left;
+    padding: 10% 5%;
+    color: #000;
+    padding-top: 10%;
+  }
+  .Container{
+    width:95vw;
+    height: 750px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+    text-align: left;
+  }
+  .Believer-Chapter{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position:relative;
+    transition: transform 1s;
+    transform-style:preserve-3d;
+    text-align: left;
+  }
+  .Card-Flip{
+  transform: rotateY(180deg);
+  }
+  .Front, .Back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .Front{
+    background:#CDE990;
+    text-align: left;
+  }
+
+  .Back{
+    background:#CDE990;
+    transform: rotateY(180deg);
+    text-align: left;
+    color: black;
+  }
+
+  .Front img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7%;
+    width:200px;
+    height: 200px;
+  }
+  .Back img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+    width:200px;
+    height: 200px;
+  }
+
+  .shola img{
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+    width:200px;
+    height: 200px;
+  }
+  .Chapter-Text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 68px;
+    padding:0% 5%;
+    text-align: left;
+    /* padding-bottom: 5%; */
+  }
+
+  .Little-Text{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding:5% 3%;
+    text-align: left;
+  }
+
+  .Funny-Header{
+    font-size: 75px;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    text-align: center;
+    padding: 15% 5%;
+    color: #000;
+  }
+  .Funny-Container{
+    width:95vw;
+    height: 950px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+    text-align: left;
+  }
+
+  .Funny-Card{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position:relative;
+    transition: transform 1s;
+    transform-style:preserve-3d;
+    text-align: left;
+    }
+    .Funny-Card-Flip{
+    transform: rotateY(180deg);
+    }
+    .Funny-Front, .Funny-Back{
+      position: absolute;
+      backface-visibility: hidden;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      text-align: left;
+    }
+    .Funny-Front{
+      background:#57C5B6;
+      text-align: left;
+    }
+
+    .Funny-Back{
+      background:#FFD93D;
+      transform: rotateY(180deg);
+      text-align: left;
+      color: black;
+    }
+
+    .Funny-Front img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 7%;
+      width: 200px;
+      height: 200px;
+    }
+
+
+    .Funny-Back img{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 7%;
+      float: right;
+      width: 200px;
+      height: 200px;
+    }
+    .Funny-Text{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: black;
+      z-index: 1000;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 68px;
+      padding:0% 5%;
+      text-align: left;
+      padding-bottom: 5%;
+    }
+
+    .Funny-Little-Text{
+      position: relative;
+      left: 0;
+      bottom: 0;
+      color: black;
+      z-index: 1000;
+      font-family: 'Heebo', sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+      padding:10% 3%;
+      text-align: left;
+    }
+    footer{
+      background-color: black;
+      /* font-family: 'Heebo', sans-serif; */
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5rem;
+      color: grey;
+    }
+    .Footer-Header{
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+    footer img{
+      width: 5%;
+      height: 5%;
+      z-index: 10;
+    }
+    .Footer-logo{
+      width: 100%;
+      height: 100%;
+      padding: 1% 5%;
+
+    }
+    .Call{
+      display: grid;
+      grid-template-columns: 10% 1fr;
+      grid-column-gap: 5%;
+    }
+    .Call img{
+      margin-left:10%;
+      width: 45px;
+      height: 45px;
+    }
+    .Email{
+      display: grid;
+      grid-template-columns: 10% 1fr;
+      grid-column-gap: 5%;
+
+    }
+    .Email img{
+      width: 45px;
+      height: 45px;
+      margin-left:10%;
+    }
+    .Quick-Links a, .About-Us-Footer a, .Email a{
+    text-decoration: none;
+    color: grey;
+    font-size: 1.5rem;
+    /* line-height: 1px; */
+    }
+    .Social-Media img{
+      width: 50px;
+      height: 50px;
+      margin-left: 3%;
+    }
+
+    .Part-One{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 1% 0%;
+      padding-left: 5%;
+    }
+    .Part-Two{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 8%;
+      padding: 4% 0%;
+      padding-left: 5%;
+    }
+    .Part-Three{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10%;
+      padding: 4% 0%;
+      padding-left: 5%;
+    }
+    .Part-Four{
+      display: grid;
+      grid-template-columns:1fr;
+      grid-column-gap: 10%;
+      padding: 2% 0%;
+      padding-left: 5%;
+    }
+    .Phone-Video-Others{
+      display: none;
+    }
+}
+
+
+@media (min-width:1024px){
+  .Phone-Video-Others{
+    display: grid;
+    grid-auto-rows:1fr;
+  }
+
+  .Phone-Video-Others{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+  }
+  .Phone-Video-Others img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Phone-Video-Others::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .logo{
+   position: absolute;
+   top: 0;
+   text-decoration: none;
+   color:black;
+   display: grid;
+   padding: 2% 3%;
+   font-family: 'Righteous', cursive;
+   font-size: 1.5rem;
+   letter-spacing: 3px;
+   text-align: center;
+   z-index: 10;
+ }
+ .Main-Content{
+   z-index: 1000;
+   margin-bottom: 2%;
+   color: rgba(255, 255, 255, 1);
+ }
+
+  .Phone-Video-Mobile{
+    display: none;
+  }
+.Phone-Video-Tablet{
+  display: none;
+}
+.BM, .SM{
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 1.3;
+  margin-left:-20%;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  width:700px;
+
+}
+.subtext{
+  margin-left:-20%;
+  color: #efefef;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bolder;
+}
+
+.Main-Button{
+  text-decoration: none;
+  color: white;
+  border:2px solid #fff;
+  padding: 2% 4%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  transition: 10s;
+}
+
+.Button{
+  position: relative;
+  bottom: 0;
+  left:0;
+  margin-left:-20%;
+  padding-bottom:5%;
+  display: flex;
+}
+
+
+
+#ABOUT_US img{
+  width: 450px;
+  height: 500px;
+}
+
+#ABOUT_US p{
+  font-size: 20px;
+  line-height: 2;
+  color: black;
+}
+#ABOUT_US h2{
+  font-size: 40px;
+  color: black;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding-bottom: 5%;
+  padding-top: 15%;
+}
+.about_button{
+z-index: 1;
+text-decoration: none;
+color: #000;
+font-size: 20px;
+border-radius: 8px;
+padding: 3% 10%;
+margin: 5%;
+font-family: 'Poppins', sans-serif;
+text-align: center;
+font-weight: 600;
+background-color:#37c5ff;
+width: 500px;
+}
+
+#ABOUT_US{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  'First Second'
+}
+.First{
+  grid-area:First;
+}
+.Second{
+  grid-area:Second;
+}
+
+.Container{
+  width:55vw;
+  height: 600px;
+  padding: 1% 5%;
+  cursor: pointer;
+  perspective: 1000px;
+  text-align: left;
+}
+.Right{
+  float: right;
+  display: block;
+}
+.Middle{
+  margin: 0% 25%;
+}
+.Funny-Inside{
+  margin-left: 30%;
+}
+.Carousel-Header{
+  font-size: 85px;
+  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'IM Fell French Canon', serif; */
+  font-weight:bolder;
+  text-align: center;
+  padding: 0% 5%;
+  padding-bottom:5%;
+  color: #000;
+}
+.Believer-Chapter{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position:relative;
+  transition: transform 1s;
+  transform-style:preserve-3d;
+  text-align: left;
+}
+.Card-Flip{
+transform: rotateY(180deg);
+}
+.Front, .Back{
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: left;
+}
+.Front{
+  background:#CDE990;
+  text-align: left;
+}
+
+.Back{
+  background:#CDE990;
+  transform: rotateY(180deg);
+  text-align: left;
+  color: black;
+}
+
+.Front img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7%;
+  width:130px;
+  height: 130px;
+}
+.Back img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7%;
+  float: right;
+  width:130px;
+  height: 130px;
+}
+.shola img{
+  position: relative;
+  top: 0;
+  right: 0;
+  padding: 7%;
+  float: right;
+  width:130px;
+  height: 130px;
+}
+
+.Chapter-Text{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: black;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  padding:0% 5%;
+  text-align: left;
+}
+
+.Little-Text{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  color: black;
+  z-index: 1000;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding:5% 3%;
+  text-align: left;
+}
+
+.Funny-Header{
+  font-size: 85px;
+  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+  font-weight:700;
+  text-align: center;
+  padding: 15% 5%;
+  color: #000;
+}
+.Funny-Container{
+  width:55vw;
+  height: 650px;
+  padding: 5% 5%;
+  cursor: pointer;
+  perspective: 1000px;
+  text-align: left;
+}
+.Funny-Container:first-of-type{
+  width: 55vw;
+  height: 680px;
+}
+.Funny-Card{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position:relative;
+  transition: transform 1s;
+  transform-style:preserve-3d;
+  text-align: left;
+  }
+  .Funny-Card-Flip{
+  transform: rotateY(180deg);
+  }
+  .Funny-Front, .Funny-Back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .Funny-Front{
+    background:#57C5B6;
+    text-align: left;
+  }
+
+  .Funny-Back{
+    background:#FFD93D;
+    transform: rotateY(180deg);
+    text-align: left;
+    color: black;
+  }
+
+  .Funny-Front img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7%;
+    width: 130px;
+    height: 130px;
+  }
+
+
+  .Funny-Back img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+    width: 130px;
+    height: 130px;
+  }
+  .Funny-Text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    padding:0% 5%;
+    text-align: left;
+    padding-bottom: 5%;
+  }
+
+  .Funny-Little-Text{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding:10% 3%;
+    text-align: left;
+  }
+  footer{
+    background-color: black;
+    /* font-family: 'Heebo', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: grey;
+  }
+  .Footer-Header{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  footer img{
+    width: 5%;
+    height: 5%;
+    z-index: 10;
+  }
+  .Footer-logo{
+    width: 100%;
+    height: 100%;
+    padding: 1% 5%;
+
+  }
+  .Call{
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-column-gap: 5%;
+  }
+  .Call img{
+    margin-left:10%;
+    width: 45px;
+    height: 45px;
+  }
+  .Email{
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-column-gap: 5%;
+
+  }
+  .Email img{
+    width: 45px;
+    height: 45px;
+    margin-left:10%;
+  }
+  .Quick-Links a, .About-Us-Footer a, .Email a{
+  text-decoration: none;
+  color: grey;
+  font-size: 1.5rem;
+  /* line-height: 1px; */
+  }
+  .Social-Media img{
+    width: 50px;
+    height: 50px;
+    margin-left: 3%;
+  }
+
+  .Part-One{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2% 0%;
+    padding-left: 5%;
+  }
+  .Part-Two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8%;
+    padding: 2% 0%;
+    padding-left: 5%;
+  }
+  .Part-Three{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+    padding: 2% 0%;
+    padding-left: 5%;
+  }
+  .Part-Four{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-column-gap: 10%;
+    padding: 2% 0%;
+    padding-left: 5%;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width:1280px){
+  .BM, .SM{
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 1.3;
+    margin-left:-40%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    width: 750px;
+    }
+  .subtext{
+    margin-left:-40%;
+    color: #efefef;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bolder;
+  }
+
+  .Main-Button{
+    text-decoration: none;
+    color: white;
+    border:2px solid #fff;
+    padding: 2% 4%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    transition: 10s;
+  }
+
+  .Button{
+    position: relative;
+    bottom: 0;
+    left:0;
+    margin-left:-40%;
+    padding-bottom:5%;
+    display: flex;
+  }
+  .Front img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7%;
+    width:150px;
+    height: 150px;
+  }
+  .Back img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+    width:150px;
+    height: 150px;
+  }
+
+  .shola img{
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 7%;
+    float: right;
+    width:150px;
+    height: 150px;
+  }
+
+  #ABOUT_US img{
+    width: 450px;
+    height: 500px;
+  }
+
+  #ABOUT_US p{
+    font-size: 22px;
+    line-height: 2;
+    color: black;
+  }
+  #ABOUT_US h2{
+    font-size: 43px;
+    color: black;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-bottom: 5%;
+    padding-top: 15%;
+  }
+  .about_button{
+  z-index: 1;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 3% 10%;
+  margin: 5%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  background-color:#37c5ff;
+  width: 500px;
+  }
+
+  #ABOUT_US{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    'First Second'
+  }
+  .First{
+    grid-area:First;
+  }
+  .Second{
+    grid-area:Second;
+  }
+
+  .Carousel-Header{
+    font-size: 85px;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'IM Fell French Canon', serif; */
+    font-weight:bolder;
+    text-align: center;
+    padding: 0% 5%;
+    padding-bottom:5%;
+    color: #000;
+  }
+  .Container{
+    width:45vw;
+    height: 600px;
+    padding: 1% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+    text-align: left;
+  }
+  .Right{
+    float: right;
+    display: block;
+  }
+  .Middle{
+    margin: 0% 25%;
+  }
+  .Funny-Inside{
+    margin-left: 30%;
+  }
+  .Believer-Chapter{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position:relative;
+    transition: transform 1s;
+    transform-style:preserve-3d;
+    text-align: left;
+  }
+  .Card-Flip{
+  transform: rotateY(180deg);
+  }
+  .Front, .Back{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .Front{
+    background:#CDE990;
+    text-align: left;
+  }
+
+  .Back{
+    background:#CDE990;
+    transform: rotateY(180deg);
+    text-align: left;
+    color: black;
+  }
+
+  .Chapter-Text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    padding:0% 5%;
+    text-align: left;
+  }
+
+  .Little-Text{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    color: black;
+    z-index: 1000;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding:5% 3%;
+    text-align: left;
+  }
+
+  .Funny-Header{
+    font-size: 85px;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    text-align: center;
+    padding: 5% 5%;
+    padding-top:15%;
+    color: #000;
+  }
+
+  .Funny-Container{
+    width:55vw;
+    height: 650px;
+    padding: 5% 5%;
+    cursor: pointer;
+    perspective: 1000px;
+    text-align: left;
+  }
+  .Funny-Container:first-of-type{
+    width: 55vw;
+    height: 680px;
+  }
+  .Funny-Card{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position:relative;
+    transition: transform 1s;
+    transform-style:preserve-3d;
+    text-align: left;
+    }
+    .Funny-Card-Flip{
+    transform: rotateY(180deg);
+    }
+    .Funny-Front, .Funny-Back{
+      position: absolute;
+      backface-visibility: hidden;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      text-align: left;
+    }
+    .Funny-Front{
+      background:#57C5B6;
+      text-align: left;
+    }
+
+    .Funny-Back{
+      background:#FFD93D;
+      transform: rotateY(180deg);
+      text-align: left;
+      color: black;
+    }
+
+    .Funny-Front img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 7%;
+      width: 150px;
+      height: 150px;
+    }
+
+
+    .Funny-Back img{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 7%;
+      float: right;
+      width: 150px;
+      height: 150px;
+    }
+    .Funny-Text{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: black;
+      z-index: 1000;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 50px;
+      padding:0% 5%;
+      text-align: left;
+      padding-bottom: 5%;
+    }
+
+    .Funny-Little-Text{
+      position: relative;
+      left: 0;
+      bottom: 0;
+      color: black;
+      z-index: 1000;
+      font-family: 'Heebo', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      padding:10% 3%;
+      text-align: left;
+    }
+
+}
